@@ -2,6 +2,14 @@
 
 Public build of VYBR.
 
+**Live site:** https://ahelferthaus.github.io/vybr-drop01/
+
+## Repo map
+- `brand/` — voice, typography, palette
+- `drop01/` — SKU specs, colorways, numbering
+- `log/` — build log (decisions + learnings)
+- `docs/` — GitHub Pages site
+  
 This repository documents:
 
 - Brand direction
