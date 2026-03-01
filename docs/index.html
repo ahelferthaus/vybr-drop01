@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VYBR — Drop 01 (Spring 2026)</title>
+  <meta name="description" content="VYBR — Drop 01 (Spring 2026). Built in public." />
+
+  <style>
+    :root{
+      /* Rushmore + Life Aquatic inspired */
+      --cream:#F3EBDD;
+      --sand:#D8C7A8;
+      --forest:#2F4A3A;
+      --navy:#0F2238;
+      --charcoal:#1B1E22;
+      --ocean:#2A6F8F;
+
+      --bg:var(--cream);
+      --text:var(--charcoal);
+      --muted:#4B5563;
+      --card:rgba(255,255,255,0.7);
+      --border:rgba(0,0,0,0.08);
+      --shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 10% 0%, rgba(42,111,143,0.10), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(47,74,58,0.10), transparent 60%),
+                  var(--bg);
+      line-height:1.45;
+    }
+
+    .wrap{max-width:1060px;margin:0 auto;padding:28px 18px 60px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:34px}
+    .mark{
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+      font-size: 22px;
+    }
+    .sub{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:6px;
+      max-width:520px;
+    }
+    nav a{
+      color:var(--text);
+      text-decoration:none;
+      font-size:14px;
+      margin-left:14px;
+      opacity:0.9;
+    }
+    nav a:hover{opacity:1;text-decoration:underline}
+    .hero{
+      display:grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap:18px;
+      align-items:stretch;
+      margin-bottom:18px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(6px);
+    }
+    .title{
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size:44px;
+      line-height:1.08;
+      margin:0 0 10px 0;
+      letter-spacing:0.01em;
+    }
+    .kicker{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(15,34,56,0.08);
+      border:1px solid rgba(15,34,56,0.12);
+      color:var(--navy);
+      font-size:12px;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      font-weight:700;
+    }
+    .hero p{margin:10px 0 0 0;color:var(--muted);font-size:16px}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,0.65);
+      color:var(--text);
+      text-decoration:none;
+      font-weight:700;
+      font-size:14px;
+    }
+    .btn.primary{
+      background: rgba(15,34,56,0.92);
+      color: var(--cream);
+      border-color: rgba(15,34,56,0.92);
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+      margin-top:14px;
+    }
+    .h{
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size:16px;
+      margin:0 0 8px 0;
+    }
+    .pill{
+      display:inline-block;
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,0.55);
+      margin:6px 6px 0 0;
+      color:var(--muted);
+    }
+    .list{margin:8px 0 0 0;padding-left:16px;color:var(--muted)}
+    footer{
+      margin-top:26px;
+      color:var(--muted);
+      font-size:13px;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      opacity:0.95;
+    }
+    code{background:rgba(0,0,0,0.05);padding:2px 6px;border-radius:8px}
+
+    @media (max-width: 880px){
+      .hero{grid-template-columns:1fr}
+      .title{font-size:38px}
+      .grid{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="mark">VYBR</div>
+        <div class="sub">Drop 01 — Spring 2026. Built in public. Editorial. Slightly rugged. Self-aware.</div>
+      </div>
+      <nav>
+        <a href="#drop">Drop 01</a>
+        <a href="#palette">Palette</a>
+        <a href="#log">Build Log</a>
+        <a href="https://github.com/ahelferthaus/vybr-drop01" target="_blank" rel="noreferrer">Repo ↗</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <span class="kicker">Drop 01 • Spring 2026</span>
+        <h1 class="title">Stay Vibing.</h1>
+        <p>
+          VYBR is a lifestyle brand for intellectually curious adults navigating change with humor and composure.
+          This is Drop 01: a tight, disciplined first run — documented in public.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="https://github.com/ahelferthaus/vybr-drop01" target="_blank" rel="noreferrer">View the repo</a>
+          <a class="btn" href="#drop">See Drop 01 specs</a>
+          <a class="btn" href="#log">Read the build log</a>
+        </div>
+
+        <div style="margin-top:14px">
+          <span class="pill">Hoodie: VYBR (left chest)</span>
+          <span class="pill">Hat: “I’m Vibing.”</span>
+          <span class="pill">Sticker: matte die-cut</span>
+          <span class="pill">Date-stamped drops</span>
+          <span class="pill">Numbered runs</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="h">Drop 01 — colorways</h2>
+        <div class="pill" style="border-color:rgba(47,74,58,0.25)">Cream / Forest</div>
+        <div class="pill" style="border-color:rgba(15,34,56,0.25)">Navy / Cream</div>
+        <div class="pill" style="border-color:rgba(27,30,34,0.25)">Charcoal / Sand</div>
+
+        <h2 class="h" style="margin-top:14px">Built by a VYBR</h2>
+        <p style="margin:0;color:var(--muted)">
+          Day job. Family. Building nights/weekends. Keeping it disciplined.
+          Documenting what I learn so others can steal the playbook.
+        </p>
+
+        <ul class="list">
+          <li>Typography: modern serif with subtle contrast</li>
+          <li>Palette: Rushmore + Life Aquatic only</li>
+          <li>Launch: tight SKU count, quality first</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="drop" class="card">
+      <h2 class="h">Drop 01 — the products</h2>
+      <div class="grid">
+        <div class="card" style="box-shadow:none">
+          <h3 class="h">Hoodie — VYBR</h3>
+          <ul class="list">
+            <li>3 colorways: Cream/Forest, Navy/Cream, Charcoal/Sand</li>
+            <li>Left chest embroidery (3.25–3.5")</li>
+            <li>Numbered run: Drop 01 — Spring 2026</li>
+            <li>Target retail: $75</li>
+          </ul>
+        </div>
+        <div class="card" style="box-shadow:none">
+          <h3 class="h">Hat — “I’m Vibing.”</h3>
+          <ul class="list">
+            <li>2 colorways: Cream/Forest, Navy/Cream</li>
+            <li>Front script embroidery</li>
+            <li>Back: small VYBR serif mark</li>
+            <li>Target retail: $36</li>
+          </ul>
+        </div>
+        <div class="card" style="box-shadow:none">
+          <h3 class="h">Sticker</h3>
+          <ul class="list">
+            <li>Matte die-cut</li>
+            <li>Forest on cream</li>
+            <li>Target retail: $8</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:12px;color:var(--muted)">
+        Full specs live in <code>drop01/sku-specs.md</code>.
+      </p>
+    </section>
+
+    <section id="palette" class="card" style="margin-top:14px">
+      <h2 class="h">Palette (Rushmore + Life Aquatic)</h2>
+      <div class="pill" style="background:var(--cream); color:var(--charcoal);">Cream</div>
+      <div class="pill" style="background:var(--sand); color:var(--charcoal);">Sand</div>
+      <div class="pill" style="background:var(--forest); color:var(--cream); border-color:rgba(0,0,0,0.15)">Forest</div>
+      <div class="pill" style="background:var(--navy); color:var(--cream); border-color:rgba(0,0,0,0.15)">Navy</div>
+      <div class="pill" style="background:var(--charcoal); color:var(--cream); border-color:rgba(0,0,0,0.15)">Charcoal</div>
+      <div class="pill" style="background:var(--ocean); color:var(--cream); border-color:rgba(0,0,0,0.15)">Ocean</div>
+      <p style="margin-top:10px;color:var(--muted)">
+        Exact palette values live in <code>brand/palette.md</code>.
+      </p>
+    </section>
+
+    <section id="log" class="card" style="margin-top:14px">
+      <h2 class="h">Build log</h2>
+      <p style="margin:0;color:var(--muted)">
+        I’m documenting decisions + mistakes + learnings as I build this in public.
+      </p>
+      <ul class="list">
+        <li><a href="https://github.com/ahelferthaus/vybr-drop01/tree/main/log" target="_blank" rel="noreferrer">Read the log folder ↗</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>© VYBR — Drop 01 (Spring 2026)</div>
+      <div>Built in public • <a href="https://github.com/ahelferthaus/vybr-drop01" target="_blank" rel="noreferrer">GitHub</a></div>
+    </footer>
+  </div>
+</body>
+</html>
