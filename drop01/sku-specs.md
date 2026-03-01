@@ -37,3 +37,23 @@ Details:
 - Forest script on cream
 - Matte die cut
 - Retail Target: $8
+
+## VYBR Zen — Desk Totem
+
+Drop 01 — Spring 2026
+
+- Height: 4.5–5 inches
+- Soft-touch matte silicone exterior
+- Weighted steel base insert
+- Hollow interior
+- Removable warm LED tea light
+- Front imprint: "Happy Vibing"
+- Back imprint: VYBR™
+
+Color:
+- Cream body
+- Forest imprint
+- Warm white glow
+
+Target Retail:
+$32
